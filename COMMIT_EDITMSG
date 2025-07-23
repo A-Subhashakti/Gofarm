@@ -1,0 +1,28 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   django-admin
+#	new file:   gofarm/db.sqlite3
+#	new file:   gofarm/gofarm/__init__.py
+#	new file:   gofarm/gofarm/__pycache__/__init__.cpython-313.pyc
+#	new file:   gofarm/gofarm/__pycache__/settings.cpython-313.pyc
+#	new file:   gofarm/gofarm/__pycache__/urls.cpython-313.pyc
+#	new file:   gofarm/gofarm/__pycache__/wsgi.cpython-313.pyc
+#	new file:   gofarm/gofarm/advisory/forms.py
+#	new file:   gofarm/gofarm/advisory/model_training.py
+#	new file:   gofarm/gofarm/advisory/urls.py
+#	new file:   gofarm/gofarm/advisory/view
+#	new file:   gofarm/gofarm/asgi.py
+#	new file:   gofarm/gofarm/settings.py
+#	new file:   gofarm/gofarm/templets/index.html
+#	new file:   gofarm/gofarm/templets/result.html
+#	new file:   gofarm/gofarm/urls.py
+#	new file:   gofarm/gofarm/wsgi.py
+#	new file:   gofarm/manage.py
+#

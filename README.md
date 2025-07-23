@@ -1,8 +1,1 @@
-# Gofarm
-# FROM 2nd YEAR
-# TEAM NO - "104"
-#  SERIAL:  NAME :                 ROLLNO :
-#   1      SUBHASHAKTI BEHERA      24CSE106
-#   2      SAI BIMAL SATAPATHY     24CSE071
-#   3      DIBYAJYOTI KAMILA       24CSE054
-#   4      MANAS KUMAR MOHANTA     24CSEAIML229
+

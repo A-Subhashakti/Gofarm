@@ -1,0 +1,27 @@
+from django.shortcuts import render
+from .forms import CropForm
+import joblib
+import os
+
+# Load ML model (load only once)
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'ml_model', 'crop_model.pkl')
+model = joblib.load(MODEL_PATH)
+
+def predict_crop(request):
+    if request.method == 'POST':
+        form = CropForm(request.POST)
+        if form.is_valid():
+            data = [[
+                form.cleaned_data['nitrogen'],
+                form.cleaned_data['phosphorus'],
+                form.cleaned_data['potassium'],
+                form.cleaned_data['temperature'],
+                form.cleaned_data['humidity'],
+                form.cleaned_data['ph'],
+                form.cleaned_data['rainfall'],
+            ]]
+            prediction = model.predict(data)[0]
+            return render(request, 'advisory/result.html', {'crop': prediction})
+    else:
+        form = CropForm()
+    return render(request, 'advisory/index.html', {'form': form})
